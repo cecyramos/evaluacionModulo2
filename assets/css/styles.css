@@ -3,7 +3,7 @@ body {
     background-repeat: no-repeat;
     background-size: 100%;
 }
-
+/* Estilos para el carousel */
 #carouselEjemplos {
     width: 50%;
     margin: 20px auto;
@@ -19,4 +19,23 @@ body {
     width: 100%;
     height: 150px;
     object-fit: cover;
+}
+/* Estilos para el modal */
+.modal {
+    display: none; /* Ocultar el popup por defecto */
+    position: fixed; /* Fijar el popup en la pantalla */
+    z-index: 1000; /* Asegurarse de que esté por encima de otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Alto completo */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+}
+.modal-content {
+    background-color: white; /* Fondo blanco para el contenido */
+    margin: 5% auto; /* Centrar el popup */
+    padding: 50px;
+    border-radius: 5px;
+    width: 80%; /* Ancho del contenido */
+    max-width: 750px; /* Ancho máximo */
 }

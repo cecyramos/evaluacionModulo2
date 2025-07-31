@@ -41,7 +41,7 @@
             </div>
         </header>
         <!-- Buenas Prácticas -->
-        <div class="container p-5">
+        <div class="container p-4">
             <h2>Medidas de Protección</h2>
             <list>
                 <li>Software de seguridad actualizado: Antivirus, cortafuegos y otras herramientas de seguridad.</li>
@@ -49,29 +49,127 @@
                 <li>Formación en seguridad: Concientización sobre las amenazas cibernéticas y las mejores prácticas de seguridad.</li>
                 <li>Respaldos regulares de datos: Para prevenir la pérdida de información en caso de ataque.</li>
                 <li>Auditorías de seguridad: Evaluaciones periódicas de la seguridad de los sistemas para identificar vulnerabilidades.</li>
+          <br>
+          <hr>
+        </div>
+        <!-- Test de Seguridad -->
+        <div class="container p-4">
+          <h2>Test de Seguridad</h2>
+          <p>Realiza un test de seguridad para poner a prueba tus conocimientos.</p>
+          <button type="button" class="btn btn-success" id="btn-test" onclick="mostrarTest('Preguntas')">Iniciar Test</button>
+          <br>
+          <br>
+          <hr>
+        </div>
+        <!-- Popup del test -->
+        <div class="modal" id="modalTest">
+          <div class="modal-content gap-2" id="test">
+              <span class="text-end" onclick="cerrarTest()" style="cursor:pointer; float:right;">&times;</span>
+              <h3 class="text-center p-2">Test de Seguridad</h3>
+              <h5>Pregunta 1</h5>
+              <p>¿Cuál de las siguientes opciones NO es una medida de protección eficaz contra las amenazas cibernéticas?</p>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="pregunta1" id="pregunta1respuesta1">
+              <label class="form-check-label" for="pregunta1respuesta1">
+                Mantener actualizado el software de seguridad.
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="pregunta1" id="pregunta1respuesta2">
+              <label class="form-check-label" for="pregunta1respuesta2">
+                Usar contraseñas débiles y fáciles de adivinar.
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="pregunta1" id="pregunta1respuesta3">
+              <label class="form-check-label" for="pregunta1respuesta3">
+                Realizar respaldos regulares de los datos.
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="pregunta1" id="pregunta1respuesta4">
+              <label class="form-check-label" for="pregunta1respuesta4">
+                Recibir formación en seguridad.
+              </label>
+            </div>
+            <hr>
+              <h5>Pregunta 2</h5>
+              <p>¿Qué tipo de ataque se produce cuando un atacante intenta engañar a un usuario para que revele información confidencial, como contraseñas o datos de tarjetas de crédito, haciéndose pasar por una entidad legítima?</p>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="pregunta2" id="pregunta2respuesta1">
+              <label class="form-check-label" for="pregunta2respuesta1">
+                Ataque DDoS.
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="pregunta2" id="pregunta2respuesta2">
+              <label class="form-check-label" for="pregunta2respuesta2">
+                Ingeniería Social.
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="pregunta2" id="pregunta2respuesta3">
+              <label class="form-check-label" for="pregunta2respuesta3">
+                Malware.
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="pregunta2" id="pregunta2respuesta4">
+              <label class="form-check-label" for="pregunta2respuesta4">
+                Phishing.
+              </label>
+            </div>
+            <hr>
+              <h5>Pregunta 3</h5>
+              <p>¿Cuál de las siguientes medidas es la MENOS efectiva para protegerse contra el malware?</p>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="pregunta3" id="pregunta3respuesta1">
+              <label class="form-check-label" for="pregunta3respuesta1">
+                Instalar un antivirus actualizado
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="pregunta3" id="pregunta3respuesta2">
+              <label class="form-check-label" for="pregunta3respuesta2">
+                Abrir archivos adjuntos de correos electrónicos desconocidos.
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="pregunta3" id="pregunta3respuesta3">
+              <label class="form-check-label" for="pregunta3respuesta3">
+                Evitar hacer clic en enlaces sospechosos.
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="pregunta3" id="pregunta3respuesta4">
+              <label class="form-check-label" for="pregunta3respuesta4">
+                Mantener el sistema operativo actualizado.
+              </label>
+            </div>
+            <div>
+              <button class="btn btn-success" type="submit">Enviar Respuestas</button>
+              <button class="btn btn-danger" type="reset" onclick="cerrarTest()">Cancelar</button>
+            </div>
+          </div>
         </div>
         <!-- Formulario -->
-        <div class="container p-5">
+        <div class="container p-4 mb-5">
             <h2>Contáctanos</h2>
             <form>
-                <div class="mb-3">
+                <div class="mb-1">
                     <label for="nombre" class="form-label">Nombre:</label>
                     <input type="text" class="form-control" id="nombre" name="nombre">
                 </div>
-                <div class="mb-3">
+                <div class="mb-1">
                     <label for="email" class="form-label">Correo Electrónico:</label>
                     <input type="email" class="form-control" id="email" name="email">
                 </div>
-                <div class="mb-3">
+                <div class="mb-1">
                     <label for="mensaje" class="form-label">Mensaje:</label>
                     <textarea class="form-control" id="mensaje" name="mensaje"></textarea>
                 </div>
                 <button type="submit" class="btn btn-success" id="btn-contacto">Enviar</button>
             </form>
-        </div>
-        <!-- Test de Seguridad -->
-        <div>
-
         </div>
         <!-- Pie de página -->
         <footer class="bg-success text-white p-2 bg-opacity-100 fixed-bottom">
